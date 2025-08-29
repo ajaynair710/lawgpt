@@ -104,9 +104,9 @@ def generate_instruction_dataset(sections, out_json="ipc_instructions.json"):
 
 if __name__ == "__main__":
     pdf_path = "data/indian_ipc.pdf"
-    json_file = "data/res/ipc_sections.json"
-    csv_file = "data/res/ipc_sections.csv"
-    instr_file = "data/res/ipc_instructions.json"
+    json_file = "data/parsed/ipc_sections.json"
+    csv_file = "data/parsed/ipc_sections.csv"
+    instr_file = "data/parsed/ipc_instructions.json"
 
     print("Extracting text...")
     raw_text = extract_text_from_pdf(pdf_path)
