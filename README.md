@@ -26,7 +26,7 @@ law-gpt-ipc/
 │   ├── rag_pipeline.py         # RAG inference pipeline
 │
 │── train/
-│   ├── train_finetune_small.py # Fine-tune LoRA on small model
+│   ├── finetune_lora.py # Fine-tune LoRA on small model
 │
 │── eval/
 │   ├── evaluate_models.py       # Evaluate Base, RAG, Fine-tuned
@@ -99,7 +99,8 @@ python train/train_finetune_small.py
 ```
 
 * Adapter weights saved in `lawgpt-ipc-lora/`
-* Small model = fast local training (<30 min CPU, <10 min GPU)
+* Small model = fast local training (<30 min CPU, <10 min GPU). 
+* I have done CPU training on my local.
 
 ---
 
